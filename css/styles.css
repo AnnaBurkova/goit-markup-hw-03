@@ -51,6 +51,17 @@ p{
     margin: 0;
     outline: 2px solid tomato;
 }
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* Header */
+
+.main-nav{
+    display: flex;
+    align-items: center;
+}
 
 /* Logo */
 .logo-link,.logo,.logo-sec {
@@ -70,7 +81,16 @@ p{
 }
 
 /* Site nav */
-.site-nav .link {
+.site-nav{
+    display: flex;
+    margin-left: 93px;
+}
+
+.site-nav .item:not(:last-child){
+    margin-right: 50px;
+}
+
+.site-nav {
     color: var(--main-text-color) ;
     font-weight: 500;
     font-size: 14px;
@@ -80,6 +100,10 @@ p{
 }
 
 .nav-link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--main-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -99,6 +123,9 @@ p{
  
 /* Connect-nav */
 .connect-nav {
+     display: flex;
+     margin-left: auto;
+
      color:var(--additional-text-color);
      font-weight: 500;
      font-size: 14px;
@@ -107,7 +134,14 @@ p{
      text-decoration-line: none;
 }
 
+.connect-nav .item + .item{
+    margin-left: 40px;
+}
+
 .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--additional-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -147,6 +181,7 @@ p{
      text-align: center;
 }
 
+/* Benefits */
 .visually-hidden {
      position: absolute;
      white-space: nowrap;
@@ -159,9 +194,8 @@ p{
      clip-path: inset(50%);
      margin: -1px;
 }
-.section {
-     padding-top: 94px;
-     padding-bottom: 94px;
+.benefits{
+    display: flex;
 }
 
 .benefits-title {
