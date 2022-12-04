@@ -1,0 +1,330 @@
+:root{
+    --main-text-color: #212121;
+    --additional-text-color:#757575;
+    --accent-color:#2196F3;
+    --selection-text-color:#FFFFFF;
+    --main-background-color:#FFFFFF;
+    --hero-background-color:#2F303A;
+    --section-work-background-color:#F5F5F5;
+    --section-team-background-color:#F5F4FA;
+    --footer-text-color:rgba(255, 255, 255, 0.6);
+    --button-main-hero-color:#2196F3;
+    --button-active-hero-color:#188CE8;
+}
+
+body {
+    background-color:var(--main-background-color) ;
+    color:var(--main-text-color) ;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin-top: 0;
+}
+/* Основний колір тексту: #212121; */
+/* Додатковий колір тексту: #757575; */
+/* Білий : #FFFFFF; */
+/* Акцент : #2196F3 */
+
+/* Шапка background: #FFFFFF; */
+/* Секція 2 та футер #2F303A */
+/* Секціям Чим ми займаємося #F5F5F5 */
+/* Наша команда : #F5F4FA; */
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+    outline: 2px solid tomato;
+}
+
+/* Logo */
+.logo-link,.logo,.logo-sec {
+    color: var(--accent-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration-line: none;
+}
+.logo{
+    color: var(--main-text-color);
+}
+
+.logo-sec{
+    color: var(--main-background-color);
+}
+
+/* Site nav */
+.site-nav .link {
+    color: var(--main-text-color) ;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration-line: none;
+}
+
+.nav-link{
+    color: var(--main-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration-line: none;
+}
+
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus {
+    color:var(--accent-color);
+}
+.current{
+    color:var(--accent-color);
+}
+
+ 
+/* Connect-nav */
+.connect-nav {
+     color:var(--additional-text-color);
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 1.14;
+     letter-spacing: 0.02em;
+     text-decoration-line: none;
+}
+
+.link {
+    color: var(--additional-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration-line: none;
+}
+
+.connect-nav .link:hover,
+.connect-nav .link:focus {
+    color:var(--accent-color);
+}
+
+/* Hero */
+.hero {
+    background-color:var(--hero-background-color);
+    text-align: center;
+}
+.hero-title {
+     margin-bottom: 30px;
+     color: var(--selection-text-color) ;
+     font-weight: 900;
+     font-size: 44px;
+     line-height: 1.36;
+     letter-spacing: 0.06em;
+     text-transform: uppercase; 
+
+}
+
+
+/* Sections */
+.section-title{
+     color:#var(--main-text-color) ;
+     font-weight: 700;
+     font-size: 36px;
+     line-height: 1.17;
+     text-align: center;
+}
+
+.visually-hidden {
+     position: absolute;
+     white-space: nowrap;
+     width: 1px;
+     height: 1px;
+     overflow: hidden;
+     border: 0;
+     padding: 0;
+     clip: rect(0 0 0 0);
+     clip-path: inset(50%);
+     margin: -1px;
+}
+.section {
+     padding-top: 94px;
+     padding-bottom: 94px;
+}
+
+.benefits-title {
+     color:var(--main-text-color) ;
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 1.14;
+     text-transform: uppercase;
+     margin-bottom: 10px;
+}
+.benefits-text{
+     color:var(--additional-text-color)
+     font-size: 14px;
+     line-height: 1.71; 
+}
+
+.benefits p{
+    margin-bottom: 50px;
+}
+/* work examples */
+.work-title{
+     margin-bottom: 50px;
+     font-weight: 700;
+     font-size: 36px;
+     line-height: 1.17;
+     text-align: center;
+}
+
+/* Team */
+.section-title{
+    margin-bottom: 50px;
+}
+
+.person-info{
+    background-color: var(--main-background-color);
+}
+
+.title{
+     color:var(--main-text-color);
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 1.19;
+     text-align: center;
+     margin-bottom: 10px;
+}
+.text{
+     color:var(--additional-text-color) ;
+     font-size: 16px;
+     line-height: 1.19;
+     text-align: center;
+}
+
+/* Buttons */
+.button {
+    font-family: inherit;
+    color: var(--selection-text-color);
+    background-color: var(--button-main-hero-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 216px;
+    text-align: center;
+}
+
+.button:hover,
+.button:focus{
+    background-color: var(--button-main-hero-color);
+}
+
+.button:active{
+    background-color:var(--button-active-hero-color) ; 
+}
+
+.button-filter{
+     font-family: inherit;
+     background-color: var(--section-team-background-color);
+     color: var(--main-text-color);
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 1.62;
+     text-align: center;
+     letter-spacing: 0.03em;
+     cursor: pointer;
+     border-radius: 4px;
+     padding: 6px 22px;
+     min-width: 73px;
+     text-align: center;
+}
+
+.button-filter:active{
+    background-color: var(--accent-color);
+}
+  
+
+.button-filter:hover,
+.button-filter:focus{
+    background-color:var(--accent-color);
+    color: var(--selection-text-color);
+}
+
+
+
+/* Projects */
+
+.projects-title {
+     color: var(--main-text-color);
+     font-weight: 700;
+     font-size: 18px;
+     line-height: 2.00;
+     letter-spacing: 0.06em;
+}
+.projects-text{
+    color: var(--additional-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+.project-link{
+    text-decoration:none;
+}
+
+
+/* Футер */
+footer{
+    background-color: var(--hero-background-color);
+}
+
+.connect-foot {
+     color: var(--footer-text-color);
+     font-size: 14px;
+     line-height: 1.71;
+     text-decoration-line: none;
+}
+
+.connect-link{
+    color:var(--footer-text-color) ;
+    font-style:normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration-line: none;
+    letter-spacing:0.03em;
+}
+
+.phys-add {
+    color:var(--selection-text-color);
+}
+
+.connect-foot .connect-link:hover,
+.connect-foot .connect-link:focus {
+     color: var(--accent-color);
+}
+
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+    outline: 2px solid tomato;
+}
