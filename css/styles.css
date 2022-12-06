@@ -23,6 +23,12 @@ header{
      border-bottom-style: solid;
      border-bottom-color: #ECECEC;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
 .list {
     list-style: none;
     padding-left: 0;
@@ -206,15 +212,17 @@ p{
      margin: -1px;
 }
 .benefits{
+    padding-top: 94px;
+}
+.benefits-examples{
     display: flex;
 }
 
-.benefits .item:not(:last-child){
+.benefits-examples .item:not(:last-child){
     margin-right: 30px;
 }
 
 .benefits-title {
-     margin-top: 94px; 
      margin-bottom: 10px;
      color:var(--main-text-color) ;
      font-weight: 700;
@@ -251,18 +259,17 @@ p{
     margin-right: 30px;
 }
 
-.photo{
-    display: block;
-}
-
-
 /* Team */
 .team {
-    display: flex;
     background-color: var(--section-team-background-color);
+    padding-top: 94px;
 }
 
-.team .person-info:not(:last-child){
+.team-examples{
+    display: flex;
+}
+
+.team-examples .person-info:not(:last-child){
     margin-right: 30px;
     }
 
@@ -356,7 +363,7 @@ p{
 .fiter, 
 .navi-container{
     display: flex;
-    margin-bottom:34px;   
+    margin-bottom:52px;   
     justify-content: center;
 }
 
@@ -367,7 +374,7 @@ p{
 /* Projects */
 
 .portfolio{
-    margin-top: 94px;
+    padding-top: 94px;
 }
 
 .project-info{
@@ -387,6 +394,7 @@ p{
 }
 
 .projects-title {
+     padding-bottom: 4px;
      color: var(--main-text-color);
      font-weight: 700;
      font-size: 18px;
@@ -431,15 +439,15 @@ footer{
     padding-bottom: 60px;
 }
 .connect-foot {
-     margin-top: 20px;
-
+     margin-top: 28px;
+     margin-bottom: 12px;
      color: var(--footer-text-color);
      font-size: 14px;
      line-height: 1.71;
      text-decoration-line: none;
 }
 
-.connect-link{
+.connect-link{  
     color:var(--footer-text-color) ;
     font-style:normal;
     font-weight: 400;
@@ -447,12 +455,14 @@ footer{
     line-height: 1.71;
     text-decoration-line: none;
     letter-spacing:0.03em;
-    padding-bottom: 12px;
+}
+
+.connect-foot .connect-link{
+     /* margin-bottom: 12px; */
 }
 
 .phys-add {
     color:var(--selection-text-color);
-    padding-bottom: 12px;
 }
 
 .connect-foot .connect-link:hover,
