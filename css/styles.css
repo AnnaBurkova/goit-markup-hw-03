@@ -440,7 +440,6 @@ footer{
 }
 .connect-foot {
      margin-top: 28px;
-     margin-bottom: 12px;
      color: var(--footer-text-color);
      font-size: 14px;
      line-height: 1.71;
@@ -455,10 +454,7 @@ footer{
     line-height: 1.71;
     text-decoration-line: none;
     letter-spacing:0.03em;
-}
-
-.connect-foot .connect-link{
-     /* margin-bottom: 12px; */
+    margin-bottom: 12px;
 }
 
 .phys-add {
