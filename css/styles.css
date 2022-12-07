@@ -363,7 +363,7 @@ p{
 .fiter, 
 .navi-container{
     display: flex;
-    margin-bottom:52px;   
+    margin-bottom:50px;   
     justify-content: center;
 }
 
@@ -394,7 +394,7 @@ p{
 }
 
 .projects-title {
-     padding-bottom: 4px;
+     margin-bottom: 4px;
      color: var(--main-text-color);
      font-weight: 700;
      font-size: 18px;
@@ -438,12 +438,19 @@ footer{
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.contacts{
+    margin-top: 28px;
+}
+
 .connect-foot {
-     margin-top: 28px;
      color: var(--footer-text-color);
      font-size: 14px;
      line-height: 1.71;
      text-decoration-line: none;
+}
+
+.contact-link:not(:last-child) {
+    margin-bottom: 12px;
 }
 
 .connect-link{  
